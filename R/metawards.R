@@ -22,6 +22,8 @@
 #' \item \code{\link{py_install_metawards}}
 #' \item \code{\link{py_metawards_available}}
 #' \item \code{\link{py_version_metawards}}
+#' \item \code{\link{py_metawards_update_available}}
+#' \item \code{\link{py_update_metawards}}
 #' }
 #'
 #' @docType package
@@ -61,7 +63,7 @@ py_install_metawards <- function(method = "auto", python_version = NULL){
     python_version = py_version
   }
 
-  reticulate::py_install("metawards==1.3.0", method = method,
+  reticulate::py_install("metawards", method = method,
                          python_version = python_version,
                          pip = TRUE)
 }
@@ -81,4 +83,23 @@ py_metawards_available <- function(){
 py_version_metawards <- function(){
   return(reticulate::py_to_r(
     reticulate::py_get_attr(metawards, "__version__")))
+}
+
+#' Return whether a newer version of MetaWards is available.
+#' If there is, this returns the version number. If not, this
+#' returns NULL
+#'
+#' @return The version number of the update, if available
+#' @export
+py_metawards_update_available <- function(){
+  return(metawards$utils$check_for_updates())
+}
+
+#' Update the MetaWards Python module to the latest available
+#' version.
+#'
+#' @return Returns TRUE if MetaWards was updated
+#' @export
+py_update_metawards <- function(){
+  return(metawards$utils$update_metawards())
 }

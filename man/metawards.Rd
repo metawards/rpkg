@@ -31,6 +31,8 @@ at \url{https://metawards.org/api}.
 \item \code{\link{py_install_metawards}}
 \item \code{\link{py_metawards_available}}
 \item \code{\link{py_version_metawards}}
+\item \code{\link{py_metawards_update_available}}
+\item \code{\link{py_update_metawards}}
 }
 }
 

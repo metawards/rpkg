@@ -3,4 +3,6 @@
 export(metawards)
 export(py_install_metawards)
 export(py_metawards_available)
+export(py_metawards_update_available)
+export(py_update_metawards)
 export(py_version_metawards)
