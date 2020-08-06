@@ -23,3 +23,8 @@ metawards::py_install_metawards()
 
 Once you have installed, you are all ready to continue with the 
 [R quick start guide](https://metawards.org/quickstart/index.html).
+
+## Issues / Support
+
+Please post issues about this package or request support at the 
+[main MetaWards issue tracker](https://github.com/metawards/MetaWards/issues).
