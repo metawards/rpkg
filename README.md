@@ -8,7 +8,7 @@ This is a thin wrapper that makes it easy to install and use the
 * For the most accurate and up to date information please [visit the project website](https://metawards.org).
 * For an overview of features please [visit the features page](https://metawards.org/features).
 
-## Installation
+## Installation
 
 Full installation instructions are [available here](https://metawards.org/install.html),
 as well as a [R quick start guide](https://metawards.org/quickstart/index.html).
